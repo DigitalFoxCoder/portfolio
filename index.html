@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/layout/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="/src/assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="modalForm">
+        <div class="content">
+            <div class="formInfo">
+                <h2>Оформить заказ</h2>
+                <h4>Расскажите о вашем проекте, и я свяжусь с вами <br>в кратчайшие сроки</h4>
+                <div class="form">
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Ссылка на соц.сеть">
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Чем вы занимаетесь?">
+                        <input type="text" placeholder="Почта">
+                    </div>
+                    <textarea placeholder="Детали проекта"></textarea>
+                    <button>Отправить</button>
+                </div>
+            </div>
+            <div class="decorativeInfo">
+                <div class="decorativeContent">
+                    <div class="decorative"></div>
+                    <div class="hContentContainer">
+                        <div class="hContent">
+                            <img src="./src/assets/imgs/clock-activity-svgrepo-com.svg" alt="">
+                            <h4>9:00 - 18:00</h4>
+                        </div>
+                        <div class="hContent">
+                            <img src="./src/assets/imgs/telegram-alt-svgrepo-com 1.svg" alt="">
+                            <h4>Telegram</h4>
+                        </div>
+                        <div class="hContent">
+                            <img src="./src/assets/imgs/vk-svgrepo-com.svg" alt="">
+                            <h4>Вконтакте</h4>
+                        </div>
+                        <div class="hContent">
+                            <img src="./src/assets/imgs/mail-svgrepo-com.svg" alt="">
+                            <h4>Mail</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange">
+                    <img class="close" src="./src/assets/imgs/closeModal.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(()=>{
+            if(window.innerWidth <= 1023){
+                let num_width = document.querySelector('input').offsetWidth
+                document.querySelector('textarea').style.width = `calc(${num_width*2}px + 2vw)`
+                console.log(`calc(${num_width*2}px + 2vw)`)
+            }
+        }, 500)
+        
+    </script>
+    <div class="modalService">
+        <div class="content">
+            <div class="serviceInfo">
+                <h2>Название услуги</h2>
+                <div class="moreInfo">
+                    <h5>Заголовок этапа - описание этапа</h5>
+                    <h5>Заголовок этапа - описание этапа</h5>
+                    <h5>Заголовок этапа - описание этапа</h5>
+                    <h5>Заголовок этапа - описание этапа</h5>
+                    <h5>Цена: от ${price} р.</h5>
+                    <h5>Срок исполнения: от ${days} дней</h5>
+                </div>
+                <button class="openFormBtn">Заказать услугу</button>
+            </div>
+            <div class="serviceSteps">
+                <img src="./src/assets/imgs/closeModal_service.png" alt="" class="close">
+                <div class="step">
+                    <img src="./src/assets/imgs/01.png" alt="">
+                    <h3>Заголовок разведка</h3>
+                </div>
+                <div class="step">
+                    <img src="./src/assets/imgs/02.png" alt="">
+                    <h3>Заголовок начало разработки</h3>
+                </div>
+                <div class="step">
+                    <img src="./src/assets/imgs/03.png" alt="">
+                    <h3>Заголовок конец разработки</h3>
+                </div>
+                <div class="step">
+                    <img src="./src/assets/imgs/04.png" alt="">
+                    <h3>Заголовок реализация</h3>
+                </div>
+                <img src="./src/assets/imgs/serviceModal_decorative.png" alt="" class="bg">
+            </div>
+        </div>
+    </div>
+    <div class="modalPortfolio">
+        <div class="content">
+            <div class="contentContainer">
+                <div class="imgsContainer">
+                    <div class="lineLarge">
+                        <div class="globalImg">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                        </div>
+                        <div class="smallImgs">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lineLittle">
+                        <div class="smallI">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                            <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="textContainer">
+                    <div class="heading">
+                        <h3>Заголовок</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laboriosam in distinctio voluptatem soluta ipsam quaerat earum tempore veritatis at laborum tenetur eaque, mollitia eveniet sed. Quaerat enim reiciendis laboriosam?
+                        Sapiente similique quam et soluta laborum, quis voluptate dicta hic nemo. Mollitia tempore recusandae expedita, quos ut cupiditate corporis. Fuga unde expedita amet enim incidunt sapiente odio laudantium debitis repudiandae.
+                        Natus, maiores ratione exercitationem quae minus voluptatem necessitatibus facilis culpa vero iste? Eos tenetur necessitatibus soluta cumque voluptates tempora beatae doloribus, earum vitae exercitationem sapiente, debitis voluptatem non placeat repellat?
+                        Sed ducimus possimus quae reiciendis, tenetur totam pariatur rerum fuga quibusdam maiores reprehenderit delectus culpa laboriosam. Exercitationem nemo maxime repellendus tenetur optio aut? Voluptatum ducimus mollitia quam molestiae sapiente earum?
+                        Quas quae blanditiis error voluptate iure non tenetur ducimus, earum eum pariatur facilis quaerat officia totam qui optio assumenda adipisci dolores, officiis cum asperiores fuga possimus! Cumque repellendus ducimus obcaecati!
+                        Impedit voluptates ducimus eius beatae modi quod officiis alias ex aut molestiae, culpa dicta. Ipsam similique, reiciendis cupiditate, animi dolore tempore ullam ad impedit odit ut voluptas dolor atque hic.
+                        Dolore temporibus, repellendus recusandae molestiae maxime quas labore, aliquid quis quasi laboriosam vero iusto cupiditate esse dicta dolorum repudiandae iste deserunt culpa, eveniet non ipsum maiores! Dignissimos aut dolorem ad!
+                        Amet eum dolore itaque quis praesentium dolores, esse officiis omnis distinctio cumque! Distinctio vero quisquam blanditiis, quis culpa autem incidunt veritatis ex iste, repellat quam nihil facilis veniam fugit corporis?
+                        Vitae a libero inventore aliquid ad deserunt, iure unde repellendus sit alias perferendis dolorem consectetur quibusdam, blanditiis explicabo laboriosam recusandae expedita, iste soluta officia ullam quam ducimus et! Dolor, fuga.
+                        </p> 
+                </div>
+                
+            </div>
+            <div class="btnsContainer">
+                <button onclick="close_modalPortfolio_and_open_form_modal()">Хочу так же</button>
+                <button onclick="close_modalPortfolio()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo"><img src="./src/assets/imgs/logo white.png" alt=""></div>
+        <nav class="navbar">
+            <ul>
+                <!-- <li><a id="hrefs">Главная</a></li>
+                <li class="dropdown">Услуги</li>
+                <li><a id="hrefs">Портфолио</a></li>
+                <li><a id="hrefs">Отзывы</a></li>
+                <li><a id="hrefs">Обо мне</a></li>
+                <li><a id="hrefs">Связаться со мной</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <script src="/src/components/animation.js"></script>
+    <div id="menu" class="fas fa-bars"></div>
+    
+    <section class="home" id="home">
+
+        <div class="contentContainer" id="animate">
+            <div class="content">
+                <h1 id="animate">Разработка и продвижение <br><span>интернет-продуктов</span></h1>
+                <h4 id="animate">Создание, обслуживание и поддержка интернет-продуктов для долгосрочных и эффективных интернет-решений в увеличении продаж и оптимизации бизнес-процессов</h4> 
+
+                <div class="btnsContainer">
+                    <button id="animate">Оформить заказ</button>
+                    <button id="animate">Услуги</button>
+                </div>
+            </div>
+            <img src="./src/assets/imgs/decorative_item_home.png" alt="" id="animate">
+        </div>
+        
+        <div class="imgContainer" id="animate">
+            <img src="./src/assets/imgs/roundBoxIll.png" alt="">
+        </div>
+        
+    </section>
+
+    <section class="advantages">
+        <img class="line" src="./src/assets/imgs/new_block_decorative_img.png" alt="">
+        <h2 id="animate">Преимущества</h2>
+        <div class="container">
+            <div class="imgContainer" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+            </div>
+            <div class="contentContainer">
+                <div class="block" id="animate">
+                    <img src="./src/assets/imgs/01.png" alt="">
+                    <h5><span>Моя цель - ваш результат.</span> Для меня важно не просто выполнить ваш проект, для меня важно произвести все необходимые действия максимально качественно, создав либо улучшив сам продукт, который подойдет для вашей целевой аудитории и привлечет новых клиентов</h5>
+                </div>
+                <div class="block" id="animate">
+                    <img src="./src/assets/imgs/02.png" alt="">
+                    <h5><span>Вижу проблему - предлагаю решение.</span>  Если я увижу что где-то в продукте есть проблема, я сразу сообщу вам об этом и при необходимости и возможности сделаю все необходимые действия для решения этой проблемы</h5>
+                </div>
+                <div class="block" id="animate">
+                    <img src="./src/assets/imgs/03.png" alt="">
+                    <h5><span>Глубокие знания.</span> Я потратил много усилий и времени что-бы угулблённо изучить всю область в привлечении клиентов с помощью интернет-маркетинга. Благодаря этому я могу оказать большой спектр услуг, и так же я могу увидеть проблему там, где её почти никто не увидет</h5>
+                </div>
+                <div class="block" id="animate">
+                    <img src="./src/assets/imgs/04.png" alt="">
+                    <h5><span>Конкурирующая цена.</span> Хоть я и предоставляю комплексные услуги, я не произвожу наценку за то что я предоставляю услуги комплексно в отличии от моих конкурентов, из-за чего каждая услуга по цене предоставляется как отдельным специалистом с своем деле</h5>
+                </div>
+            </div>
+        </div>
+        <img class="line" src="./src/assets/imgs/new_block_decorative_img.png" alt="">
+    </section>
+
+    <section class="services">
+        <div class="heading">
+            <h2 id="animate">Услуги</h2>
+            <div class="undeline" id="animate"></div>
+        </div>
+
+        <div class="blocksContainer">
+            <div class="block" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                <div class="content">
+                    <h4>Маркетинговые услуги</h4>
+                    <h6>Исследование аудитории и составление стратегии развития продукта</h6>
+                    <button><h6>Подробнее</h6></button>
+                </div>
+            </div>
+            <div class="block" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                <div class="content">
+                    <h4>Дизайн сайтов</h4>
+                    <h6>Создание композиции и оформление дизайна сайта</h6>
+                    <button><h6>Подробнее</h6></button>
+                </div>
+            </div>
+            <div class="block" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                <div class="content">
+                    <h4>Разработка сайтов</h4>
+                    <h6>Разработка самописного сайта по техническому заданию</h6>
+                    <button><h6>Подробнее</h6></button>
+                </div>
+            </div>
+            <div class="block" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                <div class="content">
+                    <h4>Контекстная реклама</h4>
+                    <h6>Сбор семантического ядра, запуск рекламного кабинета и его дальнейшая оптимизация</h6>
+                    <button><h6>Подробнее</h6></button>
+                </div>
+            </div>
+            <div class="block" id="animate">
+                <img src="./src/assets/imgs/advantages_ill.png" alt="">
+                <div class="content">
+                    <h4>Подключение и/или оптимизация AMOCRM</h5>
+                    <h6>Настройка интеграций для увеличения продуктивности отдела продаж</h6>
+                    <button><h6>Подробнее</h6></button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="portfolio">
+        <img src="./src/assets/imgs/new_block_decorative_img.png" alt="" class="line">
+        <div class="content">
+            <img src="./src/assets/imgs/portfolio_decorative_items.png" alt="" class="decorativeItem">
+            <div class="container">
+                <h2 id="animate">Мои работы</h2>
+                <div class="swiper" id="animate">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <!-- <div class="swiper-slide"><img src="./src/assets/imgs/portfolio_card.png" alt=""></div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div> -->
+                      
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+
+            </div>
+            <img src="./src/assets/imgs/portfolio_decorative_items.png" alt="" class="decorativeItem">
+        </div>
+        <img src="./src/assets/imgs/new_block_decorative_img.png" alt="" class="line">
+    </section>
+
+    <section class="faq">
+        <div class="heading">
+            <h2 id="animate">FAQ</h2>
+            <div class="underline" id="animate"></div>
+        </div>
+        <div class="content">
+            <div class="questionBlock" id="animate">
+                <div class="question">
+                    <h3>Вопрос</h3>
+                    <img src="./src/assets/imgs/Arrow.png" alt="">
+                </div>
+                <div class="answer">
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus </h5>
+                </div>
+            </div>
+            
+            <div class="questionBlock" id="animate">
+                <div class="question">
+                    <h3>Вопрос</h3>
+                    <img src="./src/assets/imgs/Arrow.png" alt="">
+                </div>
+                <div class="answer">
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus dolor quas vitae blanditiis iure harum incidunt dicta ipsam aperiam tempore. Velit, eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat error veritatis, beatae, odio, ad impedit pariatur delectus </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <img src="./src/assets/imgs/new_block_decorative_img.png" alt="">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h2 id="animate">Расскажите о вашем проекте</h2>
+                    <div class="topContent" >
+                        <h4 id="animate">Кратко опишите свою задачу, и я свяжусь с вами в кратчайшие сроки</h4>
+                        <h4 id="animate">Быстро отвечаю с 9:00 до 18:00 по МСК</h4>
+                    </div>
+                    
+                    <div class="bottomContent">
+                        <div class="hContent"><img src="./src/assets/imgs/telegram-alt-svgrepo-com.svg" alt=""><h4>Telegram</h4></div> 
+                        <div class="hContent"><img src="./src/assets/imgs/vk-svgrepo-com.svg" alt=""><h4>ВКонтакте</h4></div>
+                        <div class="hContent"><img src="./src/assets/imgs/mail-svgrepo-com.svg" alt=""><h4>Mail</h4></div>
+                    </div>
+                    
+                </div>
+                <div class="form" id="animate">
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Ссылка на соц.сеть">
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Чем вы занимаетесь?">
+                        <input type="text" placeholder="Почта">
+                    </div>
+                    <textarea placeholder="Делали проекта"></textarea>
+                    <button>Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+</body>
+
+<script src="/src/components/menu.js"></script>
+<script src="/src/components/nav.js"></script>
+<script src="./src/components/faq.js"></script>
+<script src="./src/components/formModal.js"></script>
+<script src="./src/components/serviceModal.js"></script>
+<!-- <script src="/src/components/checkSendValidate.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./src/components/swiper.js"></script>
+<script src="/src/components/scrollAnimations.js"></script>
+</html>
